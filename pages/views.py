@@ -1,4 +1,8 @@
-from django.views.generic import TemplateView
+from django.views.generic import (
+    TemplateView,
+    # ListView,
+    # DetailView,
+)
 
 
 class HomePageView(TemplateView):
@@ -7,3 +11,13 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name = "about.html"
+
+
+# class PostListView(ListView):
+    #model = Post
+    #template_name = "post_list.html"
+
+
+# class PostDetailView(DetailView):
+    #model = Post
+    #template_name = "post_detail.html"
